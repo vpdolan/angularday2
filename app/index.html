@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello, World</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>Unsplash Photos</h2>
+
+    <form ng-submit="getPhoto(query)">
+      <input type="text" placeholder="Search for Photo" ng-model="query">
+      <button>Search</button>
+    </form>
+    
+    <div class="photoHolder">
+     <img ng-src="{{ photoUrl }}">
+    </div> 
+
+  </div>  
+
+
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
